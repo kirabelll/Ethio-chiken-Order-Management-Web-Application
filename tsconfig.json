@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "pretty": true,
+    "outDir": "dist/",
+    "baseUrl": "src/",
+    "listFiles": false,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+    "skipLibCheck": true,
+    "typeRoots": ["./node_modules/@types", "./typings"]
+  },
+
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "__test__", "coverage"]
+}
