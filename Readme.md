@@ -36,8 +36,8 @@ This is a fully-featured E-Commerce Application built with TypeScript, Express.j
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/theeeep/ecommerce-app-backend.git
-   cd ecommerce-app-backend
+   git clone https://github.com/kirabelll/EthioChicken-Order-Management-Web-Application.git
+   cd EthioChicken-Order-Management-Web-Application
    ```
 
 2. Install dependencies:
@@ -52,7 +52,9 @@ This is a fully-featured E-Commerce Application built with TypeScript, Express.j
    - Update the `.env` file with your database connection details:
 
      ``` bash
-     DATABASE_URL=postgresql://user:password@localhost:5432/ecommerce-backend?schema=public"
+     DATABASE_URL=postgresql://user:<password>@localhost:5432/database?schema=EthioChicken"
+
+     JWT_SECRET = "" // The secret key for the JWT token
      ```
 
 4. Run the Prisma migrations to set up the database schema:
@@ -97,44 +99,3 @@ This is a fully-featured E-Commerce Application built with TypeScript, Express.j
 - **PUT /api/orders/:id**: Update an order by ID
 - **DELETE /api/orders/:id**: Delete an order by ID
 
-## Project Structure
-
-``` bash
-├── README.md
-├── dist
-│   └── index.js
-├── eslint.config.mjs
-├── jest.config.ts
-├── nodemon.json
-├── package-lock.json
-├── package.json
-├── prisma
-│   ├── migrations
-│   └── schema.prisma
-├── src
-│   ├── config
-│   ├── controllers
-│   ├── error-handler.ts
-│   ├── exceptions
-│   ├── index.ts
-│   ├── middlewares
-│   ├── routes
-│   ├── schema
-│   └── types
-├── tsconfig.build.json
-└── tsconfig.json
-```
-
-12 directories, 12 files
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and create a pull request with your changes. Make sure to follow the coding style and include relevant tests.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any inquiries or support, feel free to contact me at [itz.deeepak@gmail.com] or open an issue on GitHub.
