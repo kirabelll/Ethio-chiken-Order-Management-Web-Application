@@ -1,4 +1,4 @@
-# E-Commerce App Backend
+# EthioChicken Order Management Web Application Backend
 
 ## Overview
 
