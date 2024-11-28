@@ -28,7 +28,6 @@ export const addItemToCart = async (req: Request, res: Response) => {
   res.status(201).json(cart);
 };
 export const deleteItemFromCart = async (req: Request, res: Response) => {
-  //! TODO : Check if user is deleting its own cart item only
   await prisma.cartItem.delete({
     where: {
       id: +req.params.id,

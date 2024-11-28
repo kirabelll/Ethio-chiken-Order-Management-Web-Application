@@ -8,7 +8,6 @@ import * as jwt from 'jsonwebtoken';
 const authMiddleware = async (req: Request, res: Response, next: NextFunction) => {
   //* 1. extract token from header
   const token = req.headers.authorization?.split(' ')[1];
-
   //* 2. if token is not present, throw an error of unauthorized
   if (!token) {
     return next(new UnauthorizedException('Unauthorized', ErrorCodes.UNAUTHORIZED));

@@ -7,7 +7,7 @@ const adminMiddleware = async (req: Request, res: Response, next: NextFunction) 
   if (user.role === 'ADMIN') {
     next();
   } else {
-    next(new UnauthorizedException('Unauthorized', ErrorCodes.UNAUTHORIZED));
+    next(new UnauthorizedException('Unauthorized only for user ', ErrorCodes.UNAUTHORIZED));
   }
 };
 
